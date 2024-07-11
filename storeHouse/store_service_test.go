@@ -18,10 +18,10 @@ func TestStoreInit(testin *testing.T){
 
 func TestInsertionAndRetrieval(testin *testing.T){
 	initialLink :="https://www.kachkuyadav/sellingwater/insteadofmilk/getttinglotofmoney"
-	userUUId := "e0dba740-fc4b-4977-872c-d360239e6b1a"
+	//userUUId := "e0dba740-fc4b-4977-872c-d360239e6b1a"
 	shortURL := "Jsz4k57oAX"
 
-	saveURLMapping(shortURL, initialLink, userUUId)
+	saveURLMapping(shortURL, initialLink)
 	
 	retrievedURL := retrieveInitialURL(shortURL)
 

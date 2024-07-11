@@ -42,7 +42,7 @@ import (
 		return storeService
 	 }
 
-	 func saveURLMapping(shortURL string, originalURL string, userId string){
+	 func saveURLMapping(shortURL string, originalURL string){
 
 		error := storeService.redisClient.Set(ctx, shortURL, originalURL, CacheDuration).Err()
 
